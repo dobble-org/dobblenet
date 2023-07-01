@@ -1,1 +1,4 @@
 -r yolov5/requirements.txt
+
+typed-argument-parser
+matplotlib

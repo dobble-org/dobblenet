@@ -1,6 +1,9 @@
 # Dobblenet
 A recipe to train YoloV5 to detect items on [dobble](https://www.dobblegame.com/en/games/) cards
 
+![](./charts/map.png)
+
+
 # How to train YoloV5 medium to detect icons on Dobble cards
 
 1. Clone the repository
@@ -31,5 +34,5 @@ A recipe to train YoloV5 to detect items on [dobble](https://www.dobblegame.com/
     ```bash
     python ./yolov5/train.py --img 640 --batch 1 --epoch 30 --data ./dataset/dobbleset/data.yaml --weights yolov5m.pt
     ```
-1. The result checkpoints will be in the path: `yolov5/runs/exp{N}/weights`
+1. The result checkpoints will be in the path: `yolov5/runs/exp{N}/weights/best.pt`
 
